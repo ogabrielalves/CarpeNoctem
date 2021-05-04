@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: white;
+    transition: 1.5s;
+}
+
+a:hover {
+    background-color: rgb(51, 6, 155);
+    transition: 0.75s;
+}
+
+body {
+    background-image: url(../img/Fundo2.jpg);
+    background-attachment: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: #141642;
+    color: white;
+    overflow: auto;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    float: left;
+}
+
+header img {
+    width: 1.20vw;
+}
+
+.pesquisar {
+    float: right;
+    background-color: #1c1e4f;
+    border: none;
+    height: 4.25vh;
+    width: 13.30vw;
+    text-align: center;
+    color: white;
+    transition: 0.75s;
+}
+
+.pesquisar:focus {
+    width: 14.30vw;
+    transition: 0.75s;
+}
+
+.bt-pesquisar {
+    float: right;
+    background-color: #1c1e4f;
+    height: 4.25vh;
+    width: 2.30vw;
+    border: none;
+    border-left: 3px solid #141642;
+    transition: 0.75s;
+}
+
+.bt-pesquisar:hover {
+    background-color: #0d0f30;
+    transition: 0.75s;
+}
+
+::placeholder {
+    color: white;
+}
+
+.header-dois {
+    background-color: #0c0d26;
+    color: white;
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar {
+    list-style: none;
+    padding-left: 35%;
+}
+
+.navbar li {
+    float: left;
+    margin-left: 1.33vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.navbar span {
+    background-color: rgb(51, 6, 155);
+    font-weight: bolder;
+}
+
+.contato {
+    text-align: center;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vw;
+    color: white;
+}
+
+.contato h1 {
+    padding-bottom: 40px;
+}
+
+.email {
+    width: 30%;
+    height: 60px;
+    padding: 0 5px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    border: none;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.116);
+    color: white;
+    font-size: 15px;
+}
+
+.contato select {
+    width: 30%;
+    height: 60px;
+    padding: 0 5px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    border: none;
+    background-color: rgba(255, 255, 255, 0.116);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.mensagem {
+    width: 50%;
+    height: 400px;
+    padding: 0 4px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    border: none;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.116);
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+option {
+    background: #1c1e4f;
+}
+
+option[value="1"] {
+    background: grey;
+}
+
+/* Responsividade */
+
+@media only screen and (max-width: 900px) {
+    .sinopse {
+        width: 100%;
+    }
+
+    .serie-item-branco {
+        height: 65px;
+        font-size: 13px;
+        width: 110%;
+    }
+
+    .serie-item-preto {
+        height: 65px;
+        font-size: 13px;
+        width: 110%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar {
+        padding-left: 20%;
+    }
+    
+    .bt-pesquisar {
+        width: 6.30vw;
+    }
+    
+    .email {
+        width: 50%;
+    }
+
+    .contato {
+        width: 50%;
+    }
+}

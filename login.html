@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <script src="assets/javascript/login.js"></script>
+    <link rel="shortcut icon" href="assets/img/icone.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Carpe Noctem - Login</title>
+</head>
+<body>
+    <main>
+        <h1>Conecte-se já!</h1>
+        <div class="icones-midia">
+            <a href=""><img src="assets/img/google.png" alt="Google"></a>
+            <a href=""><img src="assets/img/facebook.png" alt="Facebook"></a>
+            <a href=""><img src="assets/img/twitter.png" alt="Twitter"></a>
+        </div>
+
+        <div class="alternativa">
+            <span>OU</span>
+        </div>
+
+        <form action="">
+            <label for="">
+                <span>Email</span>
+                <input id="email" type="email" name="email">
+            </label>
+
+            <label for="">
+                <span>Senha</span>
+                <input id="senha" type="password" name="senha">
+            </label>
+
+            <button onclick="entrar()" class="entrar">Entrar</button>
+            <a class="esqueci" href="">Esqueceu a senha?</a>
+        </form>
+    </main>
+
+    <section class="imagens">
+        <img src="assets/img/Login-rafiki.svg" alt="Imagem Login">
+        <div class="circulo"></div>
+        <div class="cadastre">
+            <span>Não possui conta?</span>
+        <button onclick="cadastre()" class="cadastre">Cadastre-se</button>
+        </div>
+        
+    </section>
+</body>
+</html>
